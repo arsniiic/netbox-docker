@@ -4,7 +4,7 @@ services:
     ports:
     - 3232:8080
     environment:
-    - CSRF_TRUSTED_ORIGINS='https://netbox.sajadinia.net:40001'
+    - CSRF_TRUSTED_ORIGINS=https://netbox.sajadinia.net:40001
     volumes:
     - /home/ubuntu/projects/netbox:/etc/netbox/config:z,ro
     - netbox-media-files:/opt/netbox/netbox/media:z,rw
